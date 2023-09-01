@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My webpage!</title>
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>My webpage!</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+  </head>
+    <body>
+      <h1><b>BREAKIE MENU</b></h1>
+      <br>
+      <img src="https://www.mashed.com/img/gallery/delicious-breakfast-foods-you-need-to-try-before-you-die/intro-1584646886.jpg"width="1000" height="500">
+      <br>
+     <p><b></b>To make a order enter you personal detalis</b></p>
+      <h2>Personal Detail</h3>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <p>Select food or drinks from the menu</p>
+      <br>
+      <img src=https://i.pinimg.com/564x/be/5e/0d/be5e0d63c8543a5d3ce502bf8fc9180c.jpg>
+      <br>
+      <table>
+        <tr>
+          <th>Drinks</th>
+          <th>Price</th>
+          
+        </tr>
+        <tr>
+         
+          <td>Green Tea</td>
+          <td>$4.20</td>
+        </tr>
+        <tr>
+          <td>Americano</td>
+          <td>$5.00</td>
+        </tr>
+        <tr>
+          <td>Latte</td>
+          <td>$5.30</td>
+        </tr>
+        <tr>
+          <td>Macchiato</td>
+          <td>$5.30</td>
+        </tr>
+        <tr>
+          <td>Flat white</td>
+          <td>$5.30</td>
+        </tr>
+        <tr>
+          <td>Fresh juice(Strawbeey,Mango,Orange,Avocado,Apple)</td>
+          <td>$7.50</td>
+        </tr>
+      </table>
+      <br>
+      <img src=https://simply-delicious-food.com/wp-content/uploads/2018/10/breakfast-board.jpg>
+      <br>
+      <table>
+        <tr>
+          <th>Foods</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Panckaes with honey and fruits</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td>Egg Sandwitch</td>
+          <td>$6.00</td>
+        </tr>
+        <tr>
+          <td>Chicken Sandwich</td>
+          <td>$7.00</td>
+        </tr>
+        <tr>
+          <td>Fish sandwich</td>
+          <td>$7.50</td>
+        </tr>
+        <tr>
+          <td>Plant base sandwich</td>
+          <td>$7.00</td>
+        </tr>
+        <tr>
+          <td>Waffles</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td>Blueberry muffins</td>
+          <td>$7.50</td>
+        </tr>
+        <tr>
+          <td>Oats with fruits</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td>Greek yogurt with fruits</td>
+          <td>$9.00</td>
+        </tr>
+        <tr>
+       </table>
+       <br>
+       <form>
+        <label for="Drink">Drink that you have choose:</label><br>
+        <input type="text" id="Drink" name="Drink"><br>
+        <label for="Food">Food that you have choose:</label><br>
+        <input type="text" id="Food" name="Food">
+      </form>
+
+      <br>
+      How was your experience in this site 
+      <b> Experience: </b>
+      <br>
+        <input type="radio" name="Experience" value="Good">Good<meta charset="UTF-8"> <p>&#128077;</p>
+        <br>
+        <input type="radio" name="Experience" value="Bad">Bad <meta charset="UTF-8"> <p>&#128078;</p>
+
+      <br>
+      <p>If it bad how can we improve it comment down bellow</p>
+      <br>
+      <form>
+        <label for="Improve">Things to improve:</label><br>
+        <input type="text" id="Improve" name="Improve"><br>
+      </form>
+      <br>
+        <input type="submit" value="Make the order!"> 
+        function makeOrder() {
+          var drink = document.getElementById("Drink").value;
+          var food = document.getElementById("Food").value;
+          alert("You ordered: " + drink + " and " + food);
+        }
+      <script>
+        // String methods
+        var str = "Hello, Welcome to the page!";
+        console.log(str.length); // String length
+        console.log(str.toUpperCase()); // Convert to uppercase
+        console.log(str.toLowerCase()); // Convert to lowercase
+        console.log(str.indexOf("Welcome")); // Find index of a substring
+        console.log(str.slice(0, 5)); // Extract a substring
+        
+        // Number methods
+        var num = 48.12345;
+        console.log(num.toFixed(2)); // Round to 2 decimal places
+        console.log(num.toString()); // Convert to string
+        console.log(Number.isInteger(num)); // Check if it's an integer
+        console.log(Math.floor(num)); // Round down to nearest integer
+        console.log(Math.ceil(num)); // Round up to nearest integer
+        
+        // Array methods
+        var drinks = ["Green Tea", "Americano", "Latte"];
+        console.log(drinks.length); // Array length
+        console.log(drinks.join(", ")); // Convert array to string with separator
+        console.log(drinks.push("Macchiato")); // Add element to end of array
+        console.log(drinks.pop()); // Remove last element
+        console.log(drinks.indexOf("Latte")); // Find index of an element
+        
+        // Date methods
+        var currentDate = new Date();
+        console.log(currentDate.getFullYear()); // Get year
+        console.log(currentDate.getMonth()); // Get month (0-11)
+        console.log(currentDate.getDate()); // Get day of the month
+        console.log(currentDate.getHours()); // Get hour
+        console.log(currentDate.getMinutes()); // Get minutes
+        
+        // Function methods
+        function greet(name) {
+          console.log("Hello, " + name + "!");
+        }
+        function add(a, b) {
+          return a + b;
+        }
+  
+        // Call the functions
+        greet("Dumindra");
+        var sum = add(3, 5);
+        console.log(sum);
+  
+      </script>
+   
+    </body>
+  </html>
